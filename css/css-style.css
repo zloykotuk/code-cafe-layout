@@ -313,7 +313,7 @@ select {
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-button, html [type=button],
+button, html a.btn__icon,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
@@ -323,7 +323,7 @@ button, html [type=button],
 /**
  * Remove the inner border and padding in Firefox.
  */
-[type=button]::-moz-focus-inner,
+ a.btn__icon::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
 [type=submit]::-moz-focus-inner,
 button::-moz-focus-inner {
@@ -334,7 +334,7 @@ button::-moz-focus-inner {
 /**
  * Restore the focus styles unset by the previous rule.
  */
-[type=button]:-moz-focusring,
+a.btn__icon:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring,
 button:-moz-focusring {
